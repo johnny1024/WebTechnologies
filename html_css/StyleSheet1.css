@@ -1,0 +1,48 @@
+﻿body
+{
+     list-style-type: square;
+     background-image: url(https://pl.dotabuff.com/assets/skills/leshrac-lightning-storm-5243-f31a3369087e571306dbd0d656399dd2cff9ad2f763bd4d91dabc4238ca482ce.png); background-repeat: repeat-y
+}
+
+#cena
+{
+    color: red;
+    font-weight: bold;
+}
+
+.wstęp
+{
+    font-style: italic;
+}
+
+td img
+{
+    border-style: solid;
+    color: blue;
+}
+
+td img:hover
+{
+    border-style: solid;
+    color: red;
+}
+
+h1+h2
+{
+    letter-spacing: 5px;
+}
+
+[colspan = "2"] > p
+{
+    font-size: small;
+}
+
+p + p
+{
+    color: gray;
+
+}
+
+h1 { color: blue }
+h1 { color: green }
+

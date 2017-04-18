@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" /><title>JavaScript</title>
+
+    <script src="jquery-3.2.0.js"></script>
+    <script src="parsley.min.js"></script>
+
+</head>
+<body>
+<form name="dane_osobowe" id="form" data-validate="parsley"><table>
+    <tr><td>Imię</td><td><input id="aaa" type="text" name="f_imie" data-parsley-maxlength="5" required data-parsley-pattern="^[a-zA-Z ]+$"></td></tr>
+    <tr><td>E-mail</td><td><input type="text" name="f_email" data-parsley-trigger="change" required data-parsley-type="email"></td></tr>
+    <tr><td>Kod pocztowy</td><td><input type="text" name="f_kod" data-parsley-trigger="change" required data-parsley-pattern="^[0-9]{5}$"></td></tr>
+    <tr><td>Miasto</td><td><input type="text" name="f_miasto" data-parsley-trigger="change" required data-parsley-pattern="^[a-zA-Z ]+$"></td></tr>
+    <tr><td colspan="2"><input type="submit" value="Prześlij"></td></tr>
+</table></form>
+
+<script type="text/javascript">
+    $('#form').parsley();
+</script>
+</body>
+</html>
